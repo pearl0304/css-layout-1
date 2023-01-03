@@ -1,0 +1,147 @@
+.main_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_side {
+    background-color: #eee;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.left_side > div {
+    margin: 30px 10px;
+}
+
+.left_side .left_header {
+    color: lightgray;
+}
+
+.left_side .left_header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--MAIN_COLOR);
+}
+
+.left_side .left_bottom > div {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.left_side .left_bottom div:first-child h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.left_side .left_bottom div:nth-child(2) ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left_side .left_bottom div:nth-child(2) ul li {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.left_side .left_bottom div:last-child p {
+    font-size: 12px;
+}
+
+.right_side {
+    background-color: var(--POINT_COLOR);
+    width: 70%;
+    padding: 50px 100px;
+    color: lightgray;
+}
+
+.right_side .right_header {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.right_side .contents_wrap {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right_side .contents_wrap .content_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right_side .contents_wrap .content_header p {
+    text-align: right;
+    font-weight: 300;
+}
+
+.right_side .contents_wrap .content_box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.right_side .contents_wrap .content_box .order {
+    position: absolute;
+    left: -6px;
+    top: 30px;
+    width: 60px;
+    height: 40px;
+    background-color: var(--TEXT_COLOR);
+    color: lightgray;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.right_side .contents_wrap .content_box .thumb {
+    width: 100%;
+    height: 400px;
+}
+
+.right_side .contents_wrap .content_box .thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.right_side .contents_wrap .rate {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.right_side .contents_wrap .comment {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.right_side .contents_wrap .content_box .recommend {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--TEXT_COLOR);
+    position: relative;
+}
+
+.right_side .contents_wrap .content_box .recommend div {
+    margin: 10px;
+}
+
+.up, .down {
+    cursor: pointer;
+    display: flex;
+}

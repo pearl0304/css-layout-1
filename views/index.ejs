@@ -1,0 +1,80 @@
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <title>Take a rest</title>
+</head>
+<body>
+<div class="main_wrap">
+    <div class="left_side">
+        <div class="left_header">
+            <h1>BEST HEALING SCENES</h1>
+        </div>
+        <div class="left_bottom">
+            <div>
+                <h2>An ever growing collection featuring some of the best scenes in healing.</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aspernatur beatae debitis delectus distinctio eius ex libero molestias necessitatibus placeat, quaerat quas, quos similique tempore</span>
+            </div>
+            <div>
+                <ul>
+                    <li><a>Newsletter</a></li>
+                    <li><a>Suggest a Scene</a></li>
+                    <li><a>YouTube</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>contact</a></li>
+                    <li><a>RSS</a></li>
+                    <li><a>Letterboxd</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda labore laudantium molestias
+                    officiis
+                    quos, velit. Aperiam dignissimos eaque eum in mollitia officia possimus provident, recusandae sunt
+                    voluptates. Autem, inventore, quidem.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="right_side">
+        <div class="right_header">
+            <h3>Currently viewing everything sorted by random</h3>
+        </div>
+        <%
+        parserData = JSON.parse(data)
+        for (let i = 0; i < parserData.length; i++){
+        %>
+            <div class="contents_wrap">
+                <div class="content_header">
+                    <h1><%= parserData[i].title %></h1>
+                    <p>Photo by </br> <%= parserData[i].author %></p>
+                </div>
+                <div class="content_box">
+                    <div class="order">
+                        <span><%= i + 1 %></span>
+                    </div>
+                    <div class="thumb">
+                        <img src="<%= parserData[i].img_url %>">
+                        <div class="rate">
+                            <span>My rating: <%= parserData[i].rate %> /10</span>
+                        </div>
+                        <div class="comment">
+                            <div><span>No Comments</span></div>
+                            <div><span>Leave a Comment</span></div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <div class="up">
+                            <div>👍🏻</div>
+                        </div>
+                        <div><%= parserData[i].recommend_count %></div>
+                        <div class="down side">
+                            <div>👎🏻</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>

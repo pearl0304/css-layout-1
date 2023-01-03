@@ -1,0 +1,43 @@
+@import 'index.css';
+@import "mediaQuery.css";
+
+:root {
+    --MAIN_COLOR: #64732F;
+    --POINT_COLOR: #34401A;
+    --TEXT_COLOR: #252617;
+    --BRIGHT_POINT_COLOR: #CAD959;
+    --BRIGHT_COLOR: #BSBFSE;
+}
+
+body {
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Apple SD Gothic Neo";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, li {
+    padding-left: 0;
+    list-style: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+button, input, select, textarea :focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.hide {
+    display: none;
+}
