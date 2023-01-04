@@ -9,10 +9,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.left_fixed {
+    position: fixed;
     padding: 50px 20px;
 }
 
-.left_side > div {
+.left_side > div div {
     margin: 30px 10px;
 }
 
